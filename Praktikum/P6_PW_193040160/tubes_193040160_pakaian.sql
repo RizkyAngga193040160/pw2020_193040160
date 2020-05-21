@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2020 at 08:36 AM
+-- Generation Time: Apr 17, 2020 at 03:50 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tubes_193040160`
+-- Database: `pw_193040160`
 --
 
 -- --------------------------------------------------------
@@ -51,26 +51,7 @@ INSERT INTO `pakaian` (`Id`, `Foto`, `Kategori`, `Merk`, `Bahan`, `Harga`) VALUE
 (7, 'foto7.jpg', 'Kaos', 'Deus Ex Machina', 'Cotton Combed', 55000),
 (8, 'foto8.jpg', 'Kaos', 'New State Apparel(NSA)', 'Ring Spun Cotton', 33000),
 (9, 'foto9.png', 'Kemeja', 'Caira', 'Acrylic', 100000),
-(10, 'foto10.jpg', 'Jaket', 'Kalvin', 'Baby Terry', 900000);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user`
---
-
-CREATE TABLE `user` (
-  `id` int(11) NOT NULL,
-  `username` varchar(64) NOT NULL,
-  `password` varchar(256) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(2, 'avip', '$2y$10$bXiVwlhsMnFGIdYEyFSI3OlE.Jsovgo0WfalWu7HXyVwOCqDJJQqi');
+(10, 'foto10.jpg', 'Jaket', 'Calvin', 'Baby Terry', 900000);
 
 --
 -- Indexes for dumped tables
@@ -83,12 +64,6 @@ ALTER TABLE `pakaian`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -97,12 +72,6 @@ ALTER TABLE `user`
 --
 ALTER TABLE `pakaian`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

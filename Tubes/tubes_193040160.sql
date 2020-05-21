@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2020 at 08:36 AM
+-- Generation Time: May 17, 2020 at 05:12 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -42,16 +42,18 @@ CREATE TABLE `pakaian` (
 --
 
 INSERT INTO `pakaian` (`Id`, `Foto`, `Kategori`, `Merk`, `Bahan`, `Harga`) VALUES
-(1, 'foto1.jpg', 'Blazer Zipper', 'Nikayu', 'Cotton Stretch', 255000),
-(2, 'foto2.jpg', 'Kemeja', 'O.T.', 'Cotton Stretch', 87000),
-(3, 'foto3.jpg', 'Koko', 'JC.CO.', 'Cotton Stretch', 70000),
-(4, 'foto4.jpg', 'Sweather', 'Eiger', 'Cotton Fleece', 89550),
-(5, 'foto5.jpg', 'Jaket', 'Nike', 'Dry Fit', 349990),
-(6, 'foto6.jpg', 'Kaos', 'Kaloste', 'Cotton Combad', 35000),
-(7, 'foto7.jpg', 'Kaos', 'Deus Ex Machina', 'Cotton Combed', 55000),
-(8, 'foto8.jpg', 'Kaos', 'New State Apparel(NSA)', 'Ring Spun Cotton', 33000),
-(9, 'foto9.png', 'Kemeja', 'Caira', 'Acrylic', 100000),
-(10, 'foto10.jpg', 'Jaket', 'Kalvin', 'Baby Terry', 900000);
+(5, 'foto5.jpg', 'Jacket', 'Nike', 'Dry Fit', 349990),
+(6, 'foto6.jpg', 'Tshirt', 'Kaloste', 'Cotton Combad', 35000),
+(7, 'foto7.jpg', 'White Tshirt Deus', 'Deus Ex Machina', 'Cotton Combed', 55000),
+(8, 'foto8.jpg', 'Plain Tshirt', 'New State Apparel(NSA)', 'Ring Spun Cotton', 33000),
+(10, 'foto10.jpg', 'Jacket', 'Kalvin', 'Baby Terry', 90000),
+(24, '5ec131d15b9b4.jpg', 'Tshirt Destiny Design ', 'Shutterstock', 'Cotton Combed', 50000),
+(25, '5ec136f8eacfa.jpeg', 'Ksiecnalb Hoodie', 'No Brand', 'Fleece', 46900),
+(26, '5ec13ac708e7e.jpg', 'Hoodie', 'No Brand', 'Twill', 73000),
+(27, '5ec13c1c3f2f8.jpg', 'Parka', 'No Brand', 'Waterproof', 80000),
+(28, '5ec13cf764024.jpg', 'Jacket Parachute Ortusei', 'No Brand', 'Taslan', 100000),
+(29, '5ec13e808938c.jpg', 'Tactical Jacket', 'Survival', 'Hard Shell Parka', 220000),
+(30, '5ec13f2171284.jpg', 'Bomber Jacket T', 'RoughStock', 'Waterproof', 310000);
 
 -- --------------------------------------------------------
 
@@ -70,7 +72,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(2, 'avip', '$2y$10$bXiVwlhsMnFGIdYEyFSI3OlE.Jsovgo0WfalWu7HXyVwOCqDJJQqi');
+(2, 'avip', '$2y$10$bXiVwlhsMnFGIdYEyFSI3OlE.Jsovgo0WfalWu7HXyVwOCqDJJQqi'),
+(3, 'admin', '$2y$10$n62yNlRsZZPJMtIcwn5HtOTWtYo6bYohxucUe9k3cenagJoNxaK4y'),
+(4, 'admin1', '$2y$10$WXz/Dt5Mt5Ibb2UnB6Qx/utkBvx.WzyZb5qsebfmbbDYTrkQa8dmO');
 
 --
 -- Indexes for dumped tables
@@ -96,13 +100,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `pakaian`
 --
 ALTER TABLE `pakaian`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
